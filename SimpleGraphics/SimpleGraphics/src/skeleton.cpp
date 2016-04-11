@@ -24,7 +24,7 @@ const int SCREEN_WIDTH = 640;
 const int SCREEN_HEIGHT = 480;
 SDL_Surface* screen;
 vec3 topLeft(1, 0, 0); // red
-vec3 topRight(0, 1, 1); // blue
+vec3 topRight(0, 0, 1); // blue
 vec3 bottomLeft(1, 1, 0); // yellow
 vec3 bottomRight(0, 1, 0); // green
 vector<vec3> leftSide(SCREEN_HEIGHT);
