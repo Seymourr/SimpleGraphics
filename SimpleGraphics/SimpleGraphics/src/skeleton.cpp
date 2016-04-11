@@ -102,7 +102,7 @@ void Interpolate(float a, float b, vector<float>& result) {
 void Interpolate(vec3 a, vec3 b, vector<vec3> & result) {
 	if (result.size() == 0) return;
 	if (result.size() == 1) {
-		result[0] = a; //Correct?
+		result[0] = a; //Correct??
 		return;
 	}
 

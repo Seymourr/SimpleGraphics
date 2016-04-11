@@ -1,6 +1,6 @@
 *
 !.gitignore
-!SimpleGraphics/SimpleGraphics/src/*.cpp
-!SimpleGraphics/SimpleGraphics/src/*.h
+!src/*.cpp
+!/*.h
 
 !*/
