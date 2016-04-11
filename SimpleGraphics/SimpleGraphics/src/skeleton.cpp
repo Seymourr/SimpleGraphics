@@ -23,8 +23,8 @@ using glm::vec3;
 const int SCREEN_WIDTH = 640;
 const int SCREEN_HEIGHT = 480;
 SDL_Surface* screen;
-vec3 topLeft(1, 0, 0); // red
-vec3 topRight(0, 0, 1); // blue
+vec3 topLeft(1, 1, 0); // red
+vec3 topRight(1, 1, 1); // blue
 vec3 bottomLeft(1, 1, 0); // yellow
 vec3 bottomRight(0, 1, 0); // green
 vector<vec3> leftSide(SCREEN_HEIGHT);
@@ -45,7 +45,8 @@ int main( int argc, char* argv[] )
 	screen = InitializeSDL( SCREEN_WIDTH, SCREEN_HEIGHT );
 
 	Interpolate(topLeft, bottomLeft, leftSide);
-	Interpolate(topRight, bottomRight, rightSide);
+	Interpolate(topRight, bottomRight, rightSide);
+
 	while( NoQuitMessageSDL() )
 	{
 		Draw();
