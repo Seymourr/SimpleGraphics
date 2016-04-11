@@ -1,6 +1,6 @@
 *
 !.gitignore
-!Skeleton.cpp
-!SDLauxiliary.h
+!SimpleGraphics/SimpleGraphics/src/*.cpp
+!SimpleGraphics/SimpleGraphics/src/*.h
 
 !*/
