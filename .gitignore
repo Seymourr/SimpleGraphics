@@ -1,0 +1,4 @@
+*
+!.gitignore
+!SimpleGraphics/SimpleGraphics/*.cpp
+!SimpleGraphics/SimpleGraphics/*.h
