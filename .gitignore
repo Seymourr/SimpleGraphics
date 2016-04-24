@@ -1,6 +1,6 @@
 *
 !.gitignore
-!src/*.cpp
+!StarfieldEffect/src/*.cpp
 !/*.h
 
 !*/
