@@ -50,6 +50,9 @@ int main( int argc, char* argv[] )
 	return 0;
 }
 
+/**
+*	Main draw loop (Draw the stars)
+*/
 void Draw()
 {	
 	SDL_FillRect(screen, 0, 0);
@@ -73,6 +76,9 @@ void Draw()
 	SDL_UpdateRect( screen, 0, 0, 0, 0 );
 }
 
+/**
+*	Initialize star positions randomly (scattered)
+*/
 void initStars() {
 	for (int i = 0; i < stars.size(); ++i) {
 		//Number between -1 and 1
@@ -85,6 +91,10 @@ void initStars() {
 	}
 }
 
+/**
+*	Update the position of each star and assure they
+*	remain in a loop when going pass camera
+*/
 void Update() {
 	int t2 = SDL_GetTicks();
 	float diffTime = float(t2 - t);
@@ -98,5 +108,6 @@ void Update() {
 			stars[s].z += 1;
 		if (stars[s].z > 1)
 			stars[s].z -= 1;
-	}
+	}
+
 }

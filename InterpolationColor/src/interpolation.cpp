@@ -55,6 +55,9 @@ int main( int argc, char* argv[] )
 	return 0;
 }
 
+/**
+*	Draw the interpolated image 
+*/
 void Draw()
 {	
 
@@ -80,6 +83,9 @@ void Draw()
 	SDL_UpdateRect( screen, 0, 0, 0, 0 );
 }
 
+/**
+*	Interpolate between two values a and b, put the interpolated data in vector result
+*/
 void Interpolate(float a, float b, vector<float>& result) {
 	if (result.size() == 0) {
 		return;
@@ -100,6 +106,9 @@ void Interpolate(float a, float b, vector<float>& result) {
 	}
 }	
 
+/**
+*	Interpolate between two vectors of xyz coordinates and store the resulting vectors in result
+*/
 void Interpolate(vec3 a, vec3 b, vector<vec3> & result) {
 	if (result.size() == 0) return;
 	if (result.size() == 1) {

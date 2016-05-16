@@ -1,6 +1,7 @@
 *
 !.gitignore
 !StarfieldEffect/src/*.cpp
+!InterpolationColor/src/*.cpp
 !/*.h
 
 !*/
